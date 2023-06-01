@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "GitLab PR Code Diff",
+    "version": "1.0",
+    "description": "A Chrome extension that displays and downloads code diffs from GitLab pull requests",
+    "permissions": [
+        "storage",
+        "downloads"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+        
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [ "js/diff.js", "css/diff.css" ],
+            "matches": [ "https://gitlab.com/*" ]
+        }
+    ]
+}

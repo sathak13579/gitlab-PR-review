@@ -1,0 +1,24 @@
+.diff {
+    font-family: monospace;
+    white-space: pre;
+}
+
+.diff .deletion {
+    color: red;
+}
+
+.diff .addition {
+    color: green;
+}
+
+.diff .modification {
+    color: blue;
+}
+
+.added-line {
+    color: green;
+}
+
+.removed-line {
+    color: red;
+}
